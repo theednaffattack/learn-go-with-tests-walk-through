@@ -6,7 +6,14 @@ import "fmt"
 const englishPrefix = "Hello, "
 
 func Hello(name string) string {
-	return englishPrefix + name
+	// If supplied string is empty,
+	// return default message.
+	if name == "" {
+		name = "World"
+	}
+
+	return englishPrefix + "World"
+
 }
 
 func main(){
