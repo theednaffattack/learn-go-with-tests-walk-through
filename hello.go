@@ -1,4 +1,3 @@
-// first declare it as a package
 package main
 
 import "fmt"
