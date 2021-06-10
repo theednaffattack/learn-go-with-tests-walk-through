@@ -25,3 +25,9 @@ https://stackoverflow.com/a/63442485/9448010
 ### Run Test Coverage
 
 `go test -cover`
+
+## Standard Library
+
+### reflect.DeepEqual
+
+`reflect.DeepEqual(variable1, variable2)`
