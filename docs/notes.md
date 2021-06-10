@@ -15,3 +15,7 @@ https://stackoverflow.com/a/63442485/9448010
 
 `export PATH="$PATH:/usr/local/go/bin"`
 `export PATH="$PATH:$HOME/go/bin"`
+
+## Run Benchmarks
+
+`go test -bench=.`
