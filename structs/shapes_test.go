@@ -2,8 +2,7 @@ package structs
 
 import "testing"
 
-
-func TestPerimeter(t *testing.T)  {
+func TestPerimeter(t *testing.T) {
 	rectangle := Rectangle{10.0, 10.0}
 	got := Perimeter(rectangle)
 	want := 40.0
@@ -13,21 +12,20 @@ func TestPerimeter(t *testing.T)  {
 	}
 }
 
+func TestArea(t *testing.T) {
 
-func TestArea(t *testing.T)  {
-
-	checkArea := func(t testing.TB, shape Shape, want float64)  {
+	checkArea := func(t testing.TB, shape Shape, want float64) {
 		t.Helper()
 		got := shape.Area()
 		if got != want {
 			t.Errorf("got %g want %g", got, want)
 		}
 	}
-	
+
 	t.Run("rectangles", func(t *testing.T) {
 
-	rectangle := Rectangle{12, 6}
-	checkArea(t, rectangle, 72.0)
+		rectangle := Rectangle{12, 6}
+		checkArea(t, rectangle, 72.0)
 
 	})
 
